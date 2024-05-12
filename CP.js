@@ -1,20 +1,24 @@
-const increaseBtn = document.getElementById("increaseBtn");
-const resetBtn = document.getElementById("resetBtn");
-const decreaseBtn = document.getElementById("decreaseBtn");
-const countLbel = document.getElementById("countLabel");
+document.addEventListener("DOMContentLoaded", function() {
+    // Your JavaScript code here
+    const increaseBtn = document.getElementById("increaseBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const decreaseBtn = document.getElementById("decreaseBtn");
+    const countLabel = document.getElementById("countLabel");
 
-let count=0;
- 
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
-}
+    let count = 0;
 
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
-}
-resetBtn.onclick = function(){
-    count=0;
-    countLabel.textContent = count;
-}
+    increaseBtn.onclick = function() {
+        count++;
+        countLabel.textContent = count;
+    }
+
+    decreaseBtn.onclick = function() {
+        count--;
+        countLabel.textContent = count;
+    }
+
+    resetBtn.onclick = function() {
+        count = 0;
+        countLabel.textContent = count;
+    }
+});
